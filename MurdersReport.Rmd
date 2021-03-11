@@ -34,7 +34,7 @@ We note the large state to state variability by generating a barplot showing the
 ```{r, echo=F}
 n <- nrow(murders)
 ```
-Here `r n` states are compared
+Here `r n` states are compared plus a small change
 
 ```{r murder-rate-by-state, echo=FALSE}
 murders %>% mutate(abb = reorder(abb, rate)) %>%
